@@ -1,0 +1,207 @@
+<tw-storydata name="a, um, cat-tastrophe" startnode="1" creator="Twine" creator-version="2.1.0" ifid="59D1A3AB-63FD-41BF-A6B1-F531A806154B" format="SugarCube" format-version="2.12.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="a peculiar situation .............. " tags="" position="412,200">walking home from school, a group of ten cats walk out in front of me on the sidewalk .... i unfortunately don&#x27;t have ten hands to pet them all at once
+
+what do I do
+
+[[go home and brainstorm how to pet 10 cats at once, obviously]]</tw-passagedata><tw-passagedata pid="2" name="go home and brainstorm how to pet 10 cats at once, obviously" tags="" position="199,146">
+&lt;&lt;set $objects to 2&gt;&gt;
+&lt;&lt;set $nofeet to false&gt;&gt;
+
+I decide when I&#x27;m home that I can pet two cats with my hands, and two cats with my feet.. so that means I just need 6 other hand-like tools to pet the cats with
+
+well... lets start looking around the house, [[go to kitchen]]
+[[um... im not touching those cats with my feet...]]</tw-passagedata><tw-passagedata pid="3" name="um... im not touching those cats with my feet..." tags="" position="348,39">
+&lt;&lt;set $nofeet to true&gt;&gt;
+
+yea I guess my feet are pretty dirty..... I don&#x27;t think the cats want them on their fur... this means I&#x27;ll need to find 8 hand-like objects to pet the cats with
+
+well, I guess I&#x27;ll look around the house
+
+[[go to kitchen]]
+</tw-passagedata><tw-passagedata pid="4" name="go to kitchen" tags="" position="0,367">
+&lt;&lt;set $s to true&gt;&gt;
+&lt;&lt;if $nofeet is false&gt;&gt;
+
+you open the drawer by the microwave and find two spatulas
+
+you pick up tape and tape the spatulas to your arms
+
+Cool! you can pet 6/10 cats at once now
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is true&gt;&gt;
+
+you open the drawer by the microwave and find two spatulas
+
+you pick up tape and tape the spatulas to your arms
+
+Cool! you can pet 4/10 cats at once now
+
+
+&lt;&lt;/if&gt;&gt;
+[[go to bathroom]]
+&lt;&lt;if $nofeet is true&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands: 2
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $nofeet is false&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands + feet: 4
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $s is true&gt;&gt;
+&lt;&lt;set $objects to 0&gt;&gt;
+&lt;&lt;set $objects to 2 + $objects&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+hand like objects: $objects
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="5" name="go to bathroom" tags="" position="435,356">&lt;&lt;if $nofeet is true&gt;&gt;
+
+you go to your bathroom and pick up two toothbrushes and tape them next to the spatulas on both your arms - you and your room-mate needed new toothbrushes soon anyway
+
+cool! you can pet 6/10 cats now
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is false&gt;&gt;
+
+you go to your bathroom and pick up two toothbrushes and tape them next to the spatulas on both your arms - you and your room-mate needed new toothbrushes soon anyway
+
+cool! you can pet 8/10 cats now
+
+&lt;&lt;/if&gt;&gt;
+
+[[go to living room]]
+
+&lt;&lt;if $nofeet is true&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands: 2
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is false&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands + feet: 4
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $objects to 0&gt;&gt;
+&lt;&lt;set $objects to 4 + $objects&gt;&gt;
+hand-like objects: $objects
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="go to bedroom" tags="" position="140,356">you enter your bedroom and find your own cat, Wilson, on your bed
+
+he&#x27;s sound asleep, so you wake him up
+
+&quot;hey, you think you can help me pet 2 more cats?&quot; you ask
+
+confused by the amount of objects tapes to your arms, Wilson jumps onto your head anyway, and you can only assume its for the cause of petting 10 cats at once
+
+woah!!!!!!!!!! you can now pet 10/10 cats at once 
+
+[[lets go pet those cats]]
+
+&lt;&lt;if $nofeet is true&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands: 2
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $objects to 0&gt;&gt;
+&lt;&lt;set $objects to 8 + $objects&gt;&gt;
+hand-like objects: $objects
+&lt;&lt;/nobr&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="7" name="go to living room" tags="" position="290,356">&lt;&lt;if $nofeet is true&gt;&gt;
+you enter the living room and see the fireplace tools hanging on the mantel. one of the tools is even a brush..... why does the fireplace need a brush? this HAS to be for petting animals, and in this situation, 10 cats at once
+
+its heavy, but you roll tape 5 times around your arm to secure this brush onto your left arm
+
+you also find a hairbrush on the coffee table. you must&#x27;ve left it out this morning while getting ready, whoops. well now its being taped onto your right arm
+
+you can pet 8/10 cats now. almost there!!!!
+
+[[go to bedroom]]
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is false&gt;&gt;
+you enter the living room and see the fireplace tools hanging on the mantel. one of the tools is even a brush..... why does the fireplace need a brush? this HAS to be for petting animals, and in this situation, 10 cats at once
+
+its heavy, but you roll tape 5 times around your arm to secure this brush onto your left arm
+
+you also find a hairbrush on the coffee table. you must&#x27;ve left it out this morning while getting ready, whoops. well now its being taped onto your right arm
+
+woah!!!!!!! you can pet 10/10 cats now!!!!
+
+[[lets go pet those cats]]
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is true&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands: 2
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is false&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+actual hands + feet: 4
+&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $objects to 0&gt;&gt;
+&lt;&lt;set $objects to 6 + $objects&gt;&gt;
+hand-like objects: $objects
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="lets go pet those cats" tags="" position="290,506">&lt;&lt;if $nofeet is false&gt;&gt;
+
+you carefully walk out of the house trying not to hit your new-found cat-petting arms on anything... and there they are
+
+the 10 cats were waiting for you patiently on your front sidewalk
+
+you walk up to them, sit down on the sidewalk, and raise your arms parallel to your body ..... and!!! each cat walks happily up to the spatulas, toothbrushes, fireplace brush, hairbrush, both your hands, and both your feet, and rubs their head on them approvingly 
+
+success!! you did it!! your neighbors are staring but who cares cause you might be the only person in history to pet ten cats at once
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $nofeet is true&gt;&gt;
+you carefully walk out of the house trying not to hit your new-found cat-petting arms on anything, as well as balancing Wilson on your head... and there they are
+
+the 10 cats were waiting for you patiently on your front sidewalk
+
+you walk up to them, sit down on the sidewalk, and raise your arms parallel to your body ..... and!!! each cat walks happily up to the spatulas, toothbrushes, fireplace brush, hairbrush, both your hands, and rubs their head on them approvingly 
+
+Wilson, balancing his back legs on your head, reaches out with his paws and pets the last two cats
+
+success!! you did it!! your neighbors are staring but who cares cause you might be the only person in history to pet ten cats at once
+&lt;&lt;/if&gt;&gt;
+
+[[the end....??]]</tw-passagedata><tw-passagedata pid="9" name="the end....??" tags="" position="290,656">3 hours after maybe the most important moment of your life, you&#x27;re lying on the couch with your eyes itching and you can&#x27;t stop sneezing! 
+
+maybe you should&#x27;ve taken your allergy medicine before hand, since you are allergic to cats...
+
+
+
+
+
+
+THE END </tw-passagedata></tw-storydata>
